@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.bravosierra.com/.well-known/
+host: https://www.bravosierra.com
+note: >-
+  Bravo Sierra runs on Shopify; the OIDC/OAuth discovery documents below are
+  served first-party from the store domain but describe Shopify Customer
+  Accounts (issuer shopify.com/authentication/8268841012), not a first-party
+  Bravo Sierra API. Captured verbatim.
+documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: bravo-sierra-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: bravo-sierra-oauth-authorization-server.json
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

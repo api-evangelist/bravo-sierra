@@ -1,23 +1,78 @@
 aid: bravo-sierra
 name: Bravo Sierra
-description: Bravo Sierra is a company surfaced as a portfolio company of canaan-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Bravo Sierra is an American personal care company founded in New York City in
+  2018, building high-performance, clean body care for the most active people.
+  Its "military-native" line — deodorant, body wash, cleansing bars, body
+  fragrance, hair styling paste, and antibacterial body wipes — is designed and
+  field-tested with U.S. Special Operations Forces (starting with the 75th Ranger
+  Regiment's 2nd Battalion) and manufactured in the USA. The direct-to-consumer
+  brand runs on Shopify, offers subscriptions, and gives back a portion of every
+  sale to programs supporting active service members, veterans, and their
+  families. It was added to the API Evangelist network as a portfolio company of
+  Canaan Partners; it publishes a consumer e-commerce storefront rather than a
+  public developer API, so this profile captures identity and the store's
+  first-party well-known discovery and domain-security surface.
 url: https://raw.githubusercontent.com/api-evangelist/bravo-sierra/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.bravosierra.com/cdn/shop/files/Logo.svg?v=1771928335
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-platform: shopify
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Personal Care
+- Consumer Packaged Goods
+- E-Commerce
+- Direct to Consumer
+- Beauty and Grooming
+- Military and Veterans
+- Made in USA
+- Shopify
 apis: []
+common:
+- type: Website
+  url: https://www.bravosierra.com/
+- type: About
+  url: https://www.bravosierra.com/pages/who-we-are
+- type: Support
+  url: https://www.bravosierra.com/pages/faq
+- type: SignUp
+  url: https://www.bravosierra.com/account/register
+- type: Login
+  url: https://www.bravosierra.com/account/login
+- type: TermsOfService
+  url: https://www.bravosierra.com/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.bravosierra.com/policies/privacy-policy
+- type: WellKnown
+  url: well-known/bravo-sierra-well-known.yml
+- type: DomainSecurity
+  url: security/bravo-sierra-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
