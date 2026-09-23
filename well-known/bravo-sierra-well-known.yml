@@ -2,12 +2,12 @@ generated: '2026-07-18'
 method: searched
 source: https://www.bravosierra.com/.well-known/
 host: https://www.bravosierra.com
-note: >-
-  Bravo Sierra runs on Shopify; the OIDC/OAuth discovery documents below are
-  served first-party from the store domain but describe Shopify Customer
-  Accounts (issuer shopify.com/authentication/8268841012), not a first-party
-  Bravo Sierra API. Captured verbatim.
-documents:
+note: Bravo Sierra runs on Shopify; the OIDC/OAuth discovery documents below are served first-party from
+  the store domain but describe Shopify Customer Accounts (issuer shopify.com/authentication/8268841012),
+  not a first-party Bravo Sierra API. Captured verbatim.
+hosts:
+- host: https://www.bravosierra.com
+  documents:
   - path: /.well-known/openid-configuration
     status: 200
     file: bravo-sierra-openid-configuration.json
@@ -20,3 +20,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
